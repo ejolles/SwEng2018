@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'jacoco'
 
-
 jacoco {
     toolVersion = "0.8.0"
 }
@@ -18,7 +17,7 @@ android {
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
-	 debug {
+        debug {
             testCoverageEnabled true
         }
         release {
@@ -39,6 +38,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
 tasks.withType(Test) {
     jacoco.includeNoLocationClasses = true
 }
