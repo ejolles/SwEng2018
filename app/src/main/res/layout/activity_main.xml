@@ -12,6 +12,7 @@
         android:layout_height="96dp"
         android:layout_marginBottom="160dp"
         android:background="@color/colorPrimary"
+        android:onClick="sendMessage"
         android:text="This is a button"
         android:textColor="@android:color/background_light"
         android:textSize="30sp"
@@ -28,29 +29,13 @@
         android:layout_marginBottom="50dp"
         android:layout_marginTop="258dp"
         android:ems="10"
-        android:hint="Hello there!"
+        android:hint="Hello"
         android:inputType="textPersonName"
-        android:text="This is a plain text"
+        android:text="Hello "
         app:layout_constraintBottom_toTopOf="@+id/mainGoButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/greetingMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
-        android:layout_marginEnd="163dp"
-        android:layout_marginLeft="163dp"
-        android:layout_marginRight="163dp"
-        android:layout_marginStart="163dp"
-        android:layout_marginTop="127dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/mainName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
